@@ -34,7 +34,7 @@ However, you will not always need all of them. As with so many things, it again 
 
 ## Important for every project
 
-- A Clear directory/file structure for your project.
+- A clear directory/file structure for your project.
 - Record your workflow and write it down in a script file.
 - Create a dependency list and keep it updated, optimally in an environment file.
 - At least consider the possibility that someone, maybe you, may want to reproduce your work:
@@ -45,6 +45,8 @@ However, you will not always need all of them. As with so many things, it again 
 
 - [The Turing Way handbook to reproducible, ethical and collaborative data science](https://doi.org/10.5281/zenodo.3233853)
 - [Reproducible research policies and software/data management in scientific computing journals: a survey, discussion, and perspectives](https://doi.org/10.3389/fcomp.2024.1491823)
+- [Applying the FAIR Principles to computational workflows](https://doi.org/10.1038/s41597-025-04451-9)
+- [Recommendations for the packaging and containerizing of bioinformatics software](https://doi.org/10.12688/f1000research.15140.2) (most of the recommendations and concepts should be transferable to other fields)
 - ...
 
 ```{seealso}
