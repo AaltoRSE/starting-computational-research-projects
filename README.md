@@ -20,7 +20,7 @@
 - scrap
  -  discussion in motivation
  -  introduction page
- -  most of containers
+ -  most of containers, just tell what it is and show Containers-3: Explore two really useful Docker images
  -  snakemake (keep scripts and note that scripts should be kepts reasonable size)
  -  kitchen
  -  Clean up Dependencies-1, only discussion
