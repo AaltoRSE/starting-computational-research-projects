@@ -9,6 +9,23 @@
 - Workflow tools, mostly talk about scripts and recording steps
 
 
+- Add a list of tools
+  - version.aalto.fi
+  - teamwork
+  - sharepoint
+  - 
+
+- In organizing projects, move the excursion to the top
+
+- scrap
+ -  discussion in motivation
+ -  introduction page
+ -  most of containers
+ -  snakemake (keep scripts and note that scripts should be kepts reasonable size)
+ -  kitchen
+ -  Clean up Dependencies-1, only discussion
+ -  Dependencies-2
+
 ## Acknowledgments:
 
 Based on [Reproducible research - Preparing code to be usable by you and others in the future](https://coderefinery.github.io/reproducible-research/)
