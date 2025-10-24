@@ -25,43 +25,6 @@ effectively do that, with various advantages and disadvantages. They are
 From [reddit](https://www.reddit.com/r/ProgrammerHumor/comments/cw58z7/it_works_on_my_machine/).
 ```
 
-``````{discussion} Kitchen analogy
-- Our codes/scripts <-> cooking recipes
-- Container definition files <-> like a blueprint to build a kitchen with all
-  utensils in which the recipe can be prepared.
-- Container images <-> showroom kitchens
-- Containers <-> a real connected kitchen
-
-Just for fun: which operating systems do the following example kitchens represent?
-  `````{tabs}
-    ````{tab} 1
-      ```{figure} img/kitchen/macos.png
-      :alt: Generated image of a kitchen
-      :width: 50%
-
-      [Midjourney, CC-BY-NC 4.0]
-      ```
-    ````
-
-    ````{tab} 2
-      ```{figure} img/kitchen/windows.png
-      :alt: Generated image of a kitchen
-      :width: 50%
-
-      [Midjourney, CC-BY-NC 4.0]
-      ```
-    ````
-
-    ````{tab} 3
-      ```{figure} img/kitchen/linux.png
-      :alt: Generated image of a kitchen
-      :width: 50%
-
-      [Midjourney, CC-BY-NC 4.0]
-      ```
-    ````
-  `````
-``````
 
 ## From definition files to container images to containers
 
@@ -73,33 +36,16 @@ Just for fun: which operating systems do the following example kitchens represen
 - Definition files (e.g., Dockerfile or Singularity definition file) are text
   files that contain a series of instructions to build container images.
 
+
 ## You may have use for containers in different ways
 
 - **Installing a certain software is tricky**, or not supported for your operating system? - Check if an image is available and run the software from a container instead!
 - You want to make sure your colleagues are using the **same environment** for running your code? - Provide them an image of your container!
   - If this does not work, because they are using a different architecture than you do? - Provide a definition file for them to **build the image suitable for their computers**. This does not create the exact environment you have, but in most cases a similar enough one.
 
-## The container recipe
+---
 
-Here is an example of a Singularity definition file ([reference](https://apptainer.org/docs/user/main/build_a_container.html#building-containers-from-apptainer-definition-files)):
-
-```
-Bootstrap: docker
-From: ubuntu:24.04
-
-%post
-    apt-get -y update
-    apt-get -y install fortune cowsay lolcat
-
-%environment
-    export LC_ALL=C
-    export PATH=/usr/games:$PATH
-
-%runscript
-    fortune | cowsay | lolcat
-```
-
-Popular container implementations:
+## Popular container implementations
 
 - [Docker](https://www.docker.com/)
 - [Singularity](https://sylabs.io/docs/) (popular on high-performance computing systems)
@@ -146,142 +92,6 @@ package repositories.
 
 ---
 
-## Where can one share or find images?
-
-- [Docker Hub](https://hub.docker.com/)
-- [Quay](https://quay.io/)
-- [GitHub Container Registry](https://docs.github.com/en/packages/working-with-a-github-packages-registry/working-with-the-container-registry)
-- [GitLab Container Registry](https://docs.gitlab.com/ee/user/packages/container_registry/)
-- GitHub/GitLab release artifacts
-- [Zenodo](https://zenodo.org/)
-
----
-
-## Exercises
-
-``````{exercise} Containers-1: Time travel
-  Scenario: A researcher has written and published their research code which
-  requires a number of libraries and system dependencies. They ran their code
-  on a Linux computer (Ubuntu). One very nice thing they did was to publish
-  also a container image with all dependencies included, as well as the
-  definition file (below) to create the container image.
-
-  Now we travel 3 years into the future and want to reuse their work and adapt
-  it for our data. The container registry where they uploaded the container
-  image however no longer exists. But luckily we still have the definition file
-  (below)! From this we should be able to create a new container image.
-
-  - Can you anticipate problems using the definitions file 3 years after its creation?
-    Which possible problems can you point out?
-  - Discuss possible take-aways for creating more reusable containers.
-
-  `````{tabs}
-    ````{tab} Python project using virtual environment
-      ```{code-block}
-      :linenos:
-      Bootstrap: docker
-      From: ubuntu:latest
-
-      %post
-          # Set environment variables
-          export VIRTUAL_ENV=/app/venv
-
-          # Install system dependencies and Python 3
-          apt-get update && \
-          apt-get install -y --no-install-recommends \
-              gcc \
-              libgomp1 \
-              python3 \
-              python3-venv \
-              python3-distutils \
-              python3-pip && \
-          apt-get clean && \
-          rm -rf /var/lib/apt/lists/*
-
-          # Set up the virtual environment
-          python3 -m venv $VIRTUAL_ENV
-          . $VIRTUAL_ENV/bin/activate
-
-          # Install Python libraries
-          pip install --no-cache-dir --upgrade pip && \
-          pip install --no-cache-dir -r /app/requirements.txt
-
-      %files
-          # Copy project files
-          ./requirements.txt /app/requirements.txt
-          ./app.py /app/app.py
-          # Copy data
-          /home/myself/data /app/data
-          # Workaround to fix dependency on fancylib
-          /home/myself/fancylib /usr/lib/fancylib
-
-      %environment
-          # Set the environment variables
-          export LANG=C.UTF-8 LC_ALL=C.UTF-8
-          export VIRTUAL_ENV=/app/venv
-
-      %runscript
-          # Activate the virtual environment
-          . $VIRTUAL_ENV/bin/activate
-          # Run the application
-          python /app/app.py
-      ```
-
-      ```{solution}
-      - Line 2: "ubuntu:latest" will mean something different 3 years into the future.
-      - Lines 11-12: The compiler gcc and the library libgomp1 will have evolved.
-      - Line 30: The container uses requirements.txt to build the virtual environment but we don't see
-        here what libraries the code depends on.
-      - Line 33: Data is copied in from the hard disk of the person who created it. Hopefully we can find the data somewhere.
-      - Line 35: The library fancylib has been built outside the container and copied in but we don't see here how it was done.
-      - The Python version will be different and hopefully the code still runs.
-      - Singularity/Apptainer will have also evolved by then. Hopefully this definition file still works.
-      - No contact address to ask more questions about this file.
-      - (Can you find more? Please contribute more points.)
-      ```
-    ````
-
-    ````{tab} R project using renv
-    Work in progress: Please contribute a corresponding example which
-    demonstrates this in the context of R and renv.
-    ````
-  `````
-``````
-
-````{exercise} (optional) Containers-2: Installing the impossible.
-
-When you are missing privileges for installing certain software tools, containers can come handy.
-Here we build a Singularity/Apptainer container for installing the `cowsay` and `lolcat` Linux programs.
-
-1. Make sure you have apptainer installed:
-   ```console
-   $ apptainer --version
-   ```
-
-2. Make sure you set the apptainer cache and temporary folders.
-   ```console
-   $ mkdir ./cache/
-   $ mkdir ./temp/
-   $ export APPTAINER_CACHEDIR="./cache/"
-   $ export APPTAINER_TMPDIR="./temp/"
-   ```
-
-3. Build the container from the container recipe file introduced above.
-   ```console
-   apptainer build cowsay.sif cowsay.def
-   ```
-
-4. Let's test the container by entering into it with a shell terminal:
-   ```console
-   $ apptainer shell cowsay.sif
-   ```
-
-5. We can verify the installation.
-   ```console
-   $ cowsay "Hello world!"|lolcat
-   ```
-
-````
 
 ````{exercise} (optional) Containers-3: Explore two really useful Docker images
 You can try the below if you have Docker installed. If you have
