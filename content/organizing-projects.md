@@ -9,8 +9,51 @@
 - 10 min teaching incl. discussions
 ```
 
+
+## Reproducible publications
+
+### Discussion on collaborative writing of academic papers
+
+````{discussion} Discuss in the collaborative document:
+
+```
+- How do you collaborate on writing academic papers?
+  - ...
+  - ...
+  - (share your experience)
+
+- How do you handle collaborative issues e.g. conflicting changes?
+  - ...
+  - ...
+  - (share your experience)
+```
+
+````
+
+-> Consider using **version control for manuscripts** as well. It may help you when keeping track of edits + if you sync it online then you don't have to worry about losing your work.
+
+Version control does not have to mean git, but could also mean using "tracking changes" in tools like Word, Google Docs, or Overleaf (find links below).
+
+### Tools for collaborative writing and version control of manuscripts
+
+Git **can** be used to collaborate on manuscripts written in, e.g., LaTeX and other text-based formats. However it might not always be the most convenient. Other tools exist to make the process more enjoyable:
+
+You can **collaboratively gather notes** using self-hosted or public instances of tools like [HedgeDoc](https://hedgedoc.org/) and [Etherpad](https://etherpad.org) or use online options like [HackMD](https://hackmd.io/), [Google Docs](https://docs.google.com) or the Microsoft online tools for easy and efficient collaboration. 
+
+To format your notes into a manuscript, you can use Word-like online editors or tools like [Overleaf](https://www.overleaf.com) (LaTeX) or [Typst](https://typst.app/) (markdown). Most of the tools in this section even provide a git integration.
+
+[Manubot](https://github.com/manubot/rootstock) offers another way to turn your written word into a fully rendered manuscript using GitHub. 
+
+### Executable manuscripts
+
+You may also want to consider writing an executable manuscript using tools like [Jupyter Notebooks](https://jupyter.org) hosted on [Binder](https://mybinder.org), [Quarto](https://quarto.org/), [Authorea](https://www.authorea.com) or [Observable](https://observablehq.com/), to name a few.
+
+
 One of the first steps to make your work reproducible is to organize your projects well.
 Let's go over some of the basic things which people have found to work (and not to work).
+
+
+## Organizing projects
 
 
 ## Directory structure for projects
@@ -72,45 +115,6 @@ Check the [Git-intro lesson](https://coderefinery.github.io/git-intro/) for a re
 More tools and templates in [Heidi Seibolds blog](https://heidiseibold.ck.page/posts/setting-up-a-fair-and-reproducible-project).
 
 
----
-
-## Excursion: Reproducible publications
-
-### Discussion on collaborative writing of academic papers
-
-````{discussion} Discuss in the collaborative document:
-
-```
-- How do you collaborate on writing academic papers?
-  - ...
-  - ...
-  - (share your experience)
-
-- How do you handle collaborative issues e.g. conflicting changes?
-  - ...
-  - ...
-  - (share your experience)
-```
-
-````
-
--> Consider using **version control for manuscripts** as well. It may help you when keeping track of edits + if you sync it online then you don't have to worry about losing your work.
-
-Version control does not have to mean git, but could also mean using "tracking changes" in tools like Word, Google Docs, or Overleaf (find links below).
-
-### Tools for collaborative writing and version control of manuscripts
-
-Git **can** be used to collaborate on manuscripts written in, e.g., LaTeX and other text-based formats. However it might not always be the most convenient. Other tools exist to make the process more enjoyable:
-
-You can **collaboratively gather notes** using self-hosted or public instances of tools like [HedgeDoc](https://hedgedoc.org/) and [Etherpad](https://etherpad.org) or use online options like [HackMD](https://hackmd.io/), [Google Docs](https://docs.google.com) or the Microsoft online tools for easy and efficient collaboration. 
-
-To format your notes into a manuscript, you can use Word-like online editors or tools like [Overleaf](https://www.overleaf.com) (LaTeX) or [Typst](https://typst.app/) (markdown). Most of the tools in this section even provide a git integration.
-
-[Manubot](https://github.com/manubot/rootstock) offers another way to turn your written word into a fully rendered manuscript using GitHub. 
-
-### Executable manuscripts
-
-You may also want to consider writing an executable manuscript using tools like [Jupyter Notebooks](https://jupyter.org) hosted on [Binder](https://mybinder.org), [Quarto](https://quarto.org/), [Authorea](https://www.authorea.com) or [Observable](https://observablehq.com/), to name a few.
 
 ### Resources on research compendia
 
