@@ -56,22 +56,7 @@ Available at: https://digitalcommons.du.edu/collaborativelibrarianship/vol9/iss2
 
 This also means that you can think about it from the beginning of your research life cycle!
 
----
 
-````{discussion} Discuss in collaborative document or with your team members
-```markdown
-- What are your experiences re-running or adjusting a script or a figure you
-  created few months ago?
-  - ...
-  - ...
-  - (share your experience)
-
-- Have you continued working from a previous student's
-  script/code/plot/notebook? What were the biggest challenges?
-  - ...
-  - ...
-  - (share your experience, but constructively)
-````
 
 ```{keypoints}
 - Without reproducibility in scientific computing, everyone would have to start a new project / code from scratch.
