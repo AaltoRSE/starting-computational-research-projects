@@ -55,8 +55,8 @@ owned by the principal investigator and have your staff/students use these folde
 
 ### Directory structure for projects
 
-- Project files in a **single directory**, this is your teamwork folder.
-- **Different projects** should have **separate directories**, different teamwork folders, different gitlab repositories
+- Project files in a **single directory**, this is your [teamwork folder](https://www.aalto.fi/en/services/file-storage-space-for-research-and-groups-teamwork-network-drive).
+- **Different projects** should have **separate directories**, different [teamwork folders](https://www.aalto.fi/en/services/file-storage-space-for-research-and-groups-teamwork-network-drive), different gitlab repositories
 - Use **consistent and informative directory structure**
   - Avoid spaces in directory and file names – use `-`, `_` or CamelCase instead (nicer for computers to handle)
 - If you need to separate public/private data in gitlab:
