@@ -73,7 +73,7 @@ Workflow managers in contrast create flows that, in general, keep track on what 
 will keep track of what has been processed and only re-run those parts of it's flow that need updates.
 If properly defined (e.g. source files being inputs of steps), it will re-run all analysis starting from a modified step, which makes
 results more dependable, since you can't forget to "run that one new pre-processing step" for some old input data.
-An example of how it can be used on triton (which is also generally applicable) can be found (here)[https://github.com/AaltoRSE/snakemake-triton-example]
+An example of how it can be used on triton (which is also generally applicable) can be found [here](https://github.com/AaltoRSE/snakemake-triton-example)
 
 ---
 
