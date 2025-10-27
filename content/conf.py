@@ -12,18 +12,21 @@
 #
 import os
 import sys
-sys.path.insert(0, os.path.abspath('.'))
+
+sys.path.insert(0, os.path.abspath("."))
 
 
 # -- Project information -----------------------------------------------------
 
-project = "Reproducible research"
-copyright = "CodeRefinery contributors"
-author = "CodeRefinery contributors"
-github_user = "coderefinery"
-github_repo_name = "reproducible-research"  # auto-detected from dirname if blank
+project = "Starting computational Research Projects at Aalto"
+copyright = "CodeRefinery contributors & AaltoRSE"
+author = "CodeRefinery contributors & AaltoRSE"
+github_user = "AaltoRSE"
+github_repo_name = (
+    "starting-computational-research-projects"  # auto-detected from dirname if blank
+)
 github_version = "main"
-conf_py_path = "/content/" # with leading and trailing slash
+conf_py_path = "/content/"  # with leading and trailing slash
 
 # -- General configuration ---------------------------------------------------
 
@@ -69,7 +72,7 @@ html_theme = "sphinx_rtd_theme"
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-#html_static_path = ['css']
+# html_static_path = ['css']
 
 
 # HTML context:
@@ -86,7 +89,11 @@ html_context = {
 }
 
 import os
-if os.environ.get('GITHUB_REF', '') == 'refs/heads/'+github_version:
+
+if os.environ.get("GITHUB_REF", "") == "refs/heads/" + github_version:
     html_js_files = [
-        ('https://plausible.cs.aalto.fi/js/script.js', {"data-domain": "coderefinery.github.io", "defer": "defer"}),
+        (
+            "https://plausible.cs.aalto.fi/js/script.js",
+            {"data-domain": "aaltorse.github.io", "defer": "defer"},
+        ),
     ]
