@@ -1,6 +1,8 @@
 # Recording computational steps
 
 ```{objectives}
+- Know what is the minimal amount of information necessary to reproduce your results
+- How can you make it easier for others (or your later self) to reproduce your work
 - Understand why and when a workflow management tool can be useful
 ```
 
@@ -16,14 +18,13 @@
 - 15 min exercise/demo
 ```
 
-
 ## Several steps from input data to result
 
-*The following material is partly derived from a [HPC Carpentry lesson](https://hpc-carpentry.github.io/hpc-python/).*
+_The following material is partly derived from a [HPC Carpentry lesson](https://hpc-carpentry.github.io/hpc-python/)._
 
 In this episode, we will use an [example
-project](https://github.com/coderefinery/word-count) which finds most frequent
-words in books and plots the result from those statistics.  In this example we
+project](https://github.com/coderefinery/word-count) which finds frequent
+words in books and plots the result from those statistics. In this example we
 wish to:
 
 1. Analyze word frequencies using [code/count.py](https://github.com/coderefinery/word-count/blob/main/code/count.py)
@@ -45,10 +46,7 @@ $ python code/plot.py --data-file statistics/isles.data --plot-file plot/isles.p
 
 Another way to analyze the data would be via a graphical user interface (GUI), where you can for example drag and drop files and click buttons to do the different processing steps.
 
-Both of the above (single line commands and simple graphical interfaces) are tricky in terms of reproducibility. We currently have two steps and 4 books. But **imagine having 4 steps and 500 books**.
-How could we deal with this?
-
-As a first idea we could express the workflow with a script. The repository includes such script called `run_all.sh`.
+We can also express the workflow for all books with a script. The repository includes such script called `run_all.sh`.
 
 We can run it with:
 
@@ -56,15 +54,30 @@ We can run it with:
 $ bash run_all.sh
 ```
 
-This is **imperative style**: we tell the script to run these
-steps in precisely this order, as we would run them manually, one after another.
+These approaches are fine, when only a few steps are needed, or only a few repetitons are required, but become infeasible when large amounts of data need to be processed.
+E.g. you don't want to do either approach with 500 different books. Clicking 500 times, or having 500 copies of lines with small modifications is bound to introduce typos or other errors.
+How could we deal with this?
 
- * Often a script becomes too long to manage. When that happens, it should become
-   part of your source code and you should call it in a script.
+- Loops with automated argument lists or other approaches to specify the inputs
+- Workflow managers
+
+The simpler way, to just get reproducible results is to have tools generate the inputs automatically e.g. using "one folder/file per input" approaches.
+This will lead to reproducible results, but requires that for every change everything has to be re-run. E.g. when adding another 10 datapoints, if your script just checks
+what is there, it will re-run the analysis for all 1000 other elements as well, and if you start adding more arguments to your script, you risk the forgetting elements or
+having typos again.
+The advantage of this approach, however, is that you can easily build a executable manuscript file from such a script (like jupyter notebooks, or matlab live code).
+
+## Workflow managers
+
+Workflow managers in contrast create flows that, in general, keep track on what needs to be executed. E.g. [snakemake](https://snakemake.readthedocs.io/)
+will keep track of what has been processed and only re-run those parts of it's flow that need updates.
+If properly defined (e.g. source files being inputs of steps), it will re-run all analysis starting from a modified step, which makes
+results more dependable, since you can't forget to "run that one new pre-processing step" for some old input data.
+An example of how it can be used on triton (which is also generally applicable) can be found (here)[https://github.com/AaltoRSE/snakemake-triton-example]
 
 ---
 
-## Tools
+## Additional Tools
 
 - [Make](https://www.gnu.org/software/make/)
 - [Nextflow](https://www.nextflow.io/)
