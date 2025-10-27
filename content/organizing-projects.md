@@ -50,6 +50,14 @@ The following chart gives an overview of what data storage places you should set
 :width: 100%
 ```
 
+**Relevant resources**
+
+- [Data storage overview](https://www.aalto.fi/en/services/data-storage-file-services)
+- [Teamwork Description](https://www.aalto.fi/en/services/file-storage-space-for-research-and-groups-teamwork-network-drive)
+- [Aalto Gitlab](https://version.aalto.fi)
+- [Triton Project Folder request](https://scicomp.aalto.fi/data/requesting/)
+- [SecData](https://www.aalto.fi/en/services/secure-data-storage-secwork)
+
 It's important to note, that files in personal folders of students might be difficult to recover if the student leaves. Therefore always have project folders that are
 owned by the principal investigator and have your staff/students use these folders for storing project data or code.
 
