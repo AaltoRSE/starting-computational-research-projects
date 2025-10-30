@@ -2,6 +2,7 @@
 
 ```{objectives}
 - Understand how to organize research projects
+- What to do when and before you start a new research project at Aalto
 - Get an overview of tools for collaborative and version controlled manuscripts
 ```
 
@@ -41,9 +42,28 @@ Let's go over some of the basic things which people have found to work (and not 
 
 ## Organizing projects
 
-### What to get when you start
+### What to do when you start
 
-The following chart gives an overview of what data storage places you should set up / request if you start a new project
+#### Before you start
+
+Here are some things that should be at least considered before starting any project at Aalto. It's important to not get scared by
+the amount of forms that you might encounter. There are people who are willing to help you like the [Data Agents](https://www.aalto.fi/en/services/data-agents) and [Research Software Engineers](https://www.aalto.fi/en/services/research-software-engineers)
+
+```{figure} img/before_starting.svg
+:alt: Flow chart, Of what to do prior to starting the project. Points to ethics approval and G-Process.
+:width: 100%
+```
+
+**Relevant resources**
+
+- [Research Ethics Commitee](https://www.aalto.fi/en/services/research-ethics-review-research-ethics-committee)
+- [G process for small scale development](https://www.aalto.fi/en/cyber-security/information-security-in-projects-and-small-scale-development-detailed-guidance)
+- [Data Management Plan](https://www.aalto.fi/en/services/data-management-plan-dmp)
+
+#### When you actually start
+
+The following chart gives an overview of what data storage places you should set up / request when you start a new project, it can also help
+as a reference when setting up a Data management plan.
 
 ```{figure} img/data_flow_chart.svg
 :alt: Flow chart, showing that teamwork is strictly needed, a version.aalto.fi repository needed, when code is involved and a triton data folder if hpc is required

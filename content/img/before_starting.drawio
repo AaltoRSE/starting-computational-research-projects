@@ -1,0 +1,99 @@
+<mxfile host="Electron" modified="2025-10-30T07:00:05.545Z" agent="Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/24.2.5 Chrome/120.0.6099.109 Electron/28.1.0 Safari/537.36" etag="cI0RAV1fO8qWnQroP1aJ" version="24.2.5" type="device">
+  <diagram name="Page-1" id="eXt2_QhAnmu96vdw984v">
+    <mxGraphModel dx="1618" dy="826" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="500" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-36" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-6" target="-5ylpw8Lmupa7zF_V84z-35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-6" value="Before You start" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-584" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-24" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-530" y="210" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-37" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-35" target="-5ylpw8Lmupa7zF_V84z-38">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-400" y="135" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-43" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-35" target="-5ylpw8Lmupa7zF_V84z-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-534" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-35" value="Are&amp;nbsp;&lt;span style=&quot;background-color: initial;&quot;&gt;there&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;any&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;potential Ethics Implications?&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-594" y="70" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-44" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=1;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-38" target="-5ylpw8Lmupa7zF_V84z-41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-360" y="290" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-38" value="Ethics Review" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-409" y="115" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-39" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-474" y="130" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-40" value="This includes Ethics review, DPIA, Privacy Notice etc&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="115" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-46" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-41" target="-5ylpw8Lmupa7zF_V84z-45">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-420" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-51" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-41" target="-5ylpw8Lmupa7zF_V84z-50">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-534" y="460" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-41" value="Will you&amp;nbsp;&lt;div&gt;provide&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;a computational Service&lt;/span&gt;&lt;/div&gt;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-594" y="260" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-52" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-45" target="-5ylpw8Lmupa7zF_V84z-50">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-45" value="Begin G Process" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-409" y="305" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-47" value="Yes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-474" y="320" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-48" value="Similar Forms to Ethics approval + System description and security assessment" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-300" y="305" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-49" value="Try to involve the RSEs, we can indicate, whether this needs to go through the G-process or not." style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-730" y="305" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-50" value="Data Management Plan" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-409" y="440" width="99" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-55" value="No" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-534" y="430" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-57" value="List Item" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-470" y="240" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-58" value="Discuss with Data Agents,&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;&lt;/span&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;what kind&amp;nbsp;&lt;/span&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;of Data and what&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;kind of storage will be suitable/needed,&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;nbsp;how data integrity/security is handled etc&amp;nbsp;&lt;/span&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="-309" y="425" width="250" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-59" value="" style="endArrow=classic;html=1;rounded=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="-5ylpw8Lmupa7zF_V84z-50" target="-5ylpw8Lmupa7zF_V84z-60">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-360" y="490" as="sourcePoint" />
+            <mxPoint x="-270" y="390" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="-5ylpw8Lmupa7zF_V84z-60" value="Start your Project" style="shape=process;whiteSpace=wrap;html=1;backgroundOutline=1;" vertex="1" parent="1">
+          <mxGeometry x="-409" y="550" width="100" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
