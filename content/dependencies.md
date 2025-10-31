@@ -12,7 +12,7 @@
 
 ```{instructor-note}
 - 10 min teaching
-- 10 min exercise/demo
+- 10 min discussion
 ```
 
 Our codes often depend on other codes that in turn depend on other codes ...

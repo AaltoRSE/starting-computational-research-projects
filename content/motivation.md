@@ -5,7 +5,7 @@
 ```
 
 ```{instructor-note}
-- 10 min teaching/discussion
+- 5 min teaching/discussion
 ```
 
 ```{figure} img/research_comic_phd.gif

@@ -7,7 +7,7 @@
 ```
 
 ```{instructor-note}
-- 10 min teaching incl. discussions
+- 15 min teaching incl. discussions
 ```
 
 ## Reproducible publications

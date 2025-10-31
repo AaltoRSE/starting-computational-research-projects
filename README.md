@@ -1,30 +1,26 @@
- - Start with collaborative editing tools and reproducible publications
- - Directory structures
- - Data storage in Aalto:
-    - TeamWork for all project data. Project members have access
- - Tracking source code, data and results
-    - Metadata in a Git repository, and when published on Zenodo
-    - Publishable data also on Zenodo
-    - Use git tags when submitting
-- Workflow tools, mostly talk about scripts and recording steps
 
 
-- Add a list of tools
-  - version.aalto.fi
-  - teamwork
-  - sharepoint
-  - overleaf
+- Timing:
+ - 2:00 to 3:30, 90 minutes
+ - Breaks? Suggest 10 minute break or exercise around the middle.
 
-- In organizing projects, move the excursion to the top
-
-- scrap
- -  discussion in motivation
- -  introduction page
- -  most of containers, just tell what it is and show Containers-3: Explore two really useful Docker images
- -  snakemake (keep scripts and note that scripts should be kepts reasonable size)
- -  kitchen
- -  Clean up Dependencies-1, only discussion
- -  Dependencies-2
+- Introductions, 5 minutes
+- Motivation: 10 minutes
+  - Why the lesson, talk about learning outcomes
+  - Reproducability
+- Organizing Projects: 15 minutes
+  - reproducible publications: 5 minutes
+  - Project structure: 10 minutes
+- Recording Computational steps: 10 minutes
+  - theory: 5 minutes
+  - demonstrating a script: 5 minutes
+- Recording dependencies: 20 minutes
+  - theory 10 minutes
+  - discussion: 10 minutes
+- Recording environments: 10 minutes
+  - theory: 5 minutes
+  - demo: 5 minutes
+- Wrap up, where to go from here, questions: 10 minutes
 
 ## Acknowledgments:
 

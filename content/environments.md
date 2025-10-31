@@ -7,8 +7,8 @@
 ```
 
 ```{instructor-note}
-- 10 min teaching/discussion
-- 10 min demo
+- 5 min teaching/discussion
+- 5 min demo
 ```
 
 ## What is a container?

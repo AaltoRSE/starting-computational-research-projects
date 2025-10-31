@@ -15,7 +15,7 @@
 
 ```{instructor-note}
 - 5 min teaching
-- 15 min exercise/demo
+- 5 min exercise/demo
 ```
 
 ## Several steps from input data to result

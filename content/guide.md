@@ -6,6 +6,9 @@ permalink: /guide/
 # Instructor guide
 
 
+This sections is about the more extensive CR workshop, but is useful.
+
+
 ## Detailed day schedule
 
 Some example schedules for this lesson: 

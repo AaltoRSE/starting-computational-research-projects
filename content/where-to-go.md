@@ -5,7 +5,7 @@
 ```
 
 ```{instructor-note}
-- 10 min teaching/discussion
+- 10 min discussion
 ```
 
 This episode presents a lot of different tools and opportunities for your research software project.
