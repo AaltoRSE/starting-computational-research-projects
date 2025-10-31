@@ -56,7 +56,7 @@ the amount of forms that you might encounter. There are people who are willing t
 
 **Relevant resources**
 
-- [Research Ethics Commitee](https://www.aalto.fi/en/services/research-ethics-review-research-ethics-committee)
+- [Research Ethics Committee](https://www.aalto.fi/en/services/research-ethics-review-research-ethics-committee)
 - [G process for small scale development](https://www.aalto.fi/en/cyber-security/information-security-in-projects-and-small-scale-development-detailed-guidance)
 - [Data Management Plan](https://www.aalto.fi/en/services/data-management-plan-dmp)
 
