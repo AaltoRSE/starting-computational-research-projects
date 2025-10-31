@@ -1,0 +1,338 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="../">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Organizing your projects &mdash; Starting computational Research Projects at Aalto  documentation</title>
+      <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="../_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css" />
+      <link rel="stylesheet" type="text/css" href="../_static/copybutton.css?v=949a1ff5" />
+      <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css?v=13237357" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_lesson.css?v=e9df6548" />
+      <link rel="stylesheet" type="text/css" href="../_static/term_role_formatting.css?v=4194e21c" />
+      <link rel="stylesheet" type="text/css" href="../_static/sphinx_rtd_theme_ext_color_contrast.css?v=8e8ea19f" />
+
+  
+      <script src="../_static/jquery.js?v=5d32c60e"></script>
+      <script src="../_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="../_static/documentation_options.js?v=187304be"></script>
+      <script src="../_static/doctools.js?v=9a2dae69"></script>
+      <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
+      <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
+      <script src="../_static/copybutton.js?v=582ca9e2"></script>
+      <script src="../_static/minipres.js?v=a0d29692"></script>
+      <script>let toggleHintShow = 'Click to show';</script>
+      <script>let toggleHintHide = 'Click to hide';</script>
+      <script>let toggleOpenOnPrint = 'true';</script>
+      <script src="../_static/togglebutton.js?v=4a39c7ea"></script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+      <script data-domain="aaltorse.github.io" defer="defer" src="https://plausible.cs.aalto.fi/js/script.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex/" />
+    <link rel="search" title="Search" href="../search/" />
+    <link rel="next" title="Recording computational steps" href="../workflow-management/" />
+    <link rel="prev" title="Motivation" href="../motivation/" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../" class="icon icon-home">
+            Starting computational Research Projects at Aalto
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search/" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Core episodes</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../motivation/">Motivation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Organizing your projects</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#reproducible-publications">Reproducible publications</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#tools-for-collaborative-writing-and-version-control-of-manuscripts">Tools for collaborative writing and version control of manuscripts</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#executable-manuscripts">Executable manuscripts</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#organizing-projects">Organizing projects</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#what-to-do-when-you-start">What to do when you start</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#before-you-start">Before you start</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#when-you-actually-start">When you actually start</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#directory-structure-for-projects">Directory structure for projects</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#tracking-source-code-data-and-results">Tracking source code, data, and results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#some-tools-and-templates">Some tools and templates</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#resources-on-research-compendia">Resources on research compendia</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../workflow-management/">Recording computational steps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../dependencies/">Recording dependencies</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../environments/">Recording environments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../where-to-go/">Where to go from here</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://youtu.be/xbTTDLA3txI">Shell crash course</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../exercises/">List of exercises</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../guide/">Instructor guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">About</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.org/lessons/core/">All lessons</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.org/">CodeRefinery</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://coderefinery.org/lessons/reusing/">Reusing</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../">Starting computational Research Projects at Aalto</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Organizing your projects</li>
+      <li class="wy-breadcrumbs-aside">
+              <a href="https://github.com/AaltoRSE/starting-computational-research-projects/blob/main/content/organizing-projects.md" class="fa fa-github"> Edit on GitHub</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="organizing-your-projects">
+<h1>Organizing your projects<a class="headerlink" href="#organizing-your-projects" title="Link to this heading"></a></h1>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Understand how to organize research projects</p></li>
+<li><p>What to do when and before you start a new research project at Aalto</p></li>
+<li><p>Get an overview of tools for collaborative and version controlled manuscripts</p></li>
+</ul>
+</div>
+<div class="admonition-instructor-note instructor-note admonition" id="instructor-note-0">
+<p class="admonition-title">Instructor note</p>
+<ul class="simple">
+<li><p>15 min teaching incl. discussions</p></li>
+</ul>
+</div>
+<section id="reproducible-publications">
+<h2>Reproducible publications<a class="headerlink" href="#reproducible-publications" title="Link to this heading"></a></h2>
+<section id="tools-for-collaborative-writing-and-version-control-of-manuscripts">
+<h3>Tools for collaborative writing and version control of manuscripts<a class="headerlink" href="#tools-for-collaborative-writing-and-version-control-of-manuscripts" title="Link to this heading"></a></h3>
+<p>On the very top of the pyramid we intoduced rests the paper that is the published result of your work. Even if it is based on a solid foundation, additional
+safeguards are important.
+-&gt; Consider using <strong>version control for manuscripts</strong> as well. It may help you when keeping track of edits + if you sync it online then you don’t have to worry about losing your work.</p>
+<p>Git <strong>can</strong> be used to collaborate on manuscripts written in, e.g., LaTeX and other text-based formats. However it might not always be the most convenient.
+Other tools exist to make the process more enjoyable:</p>
+<p>You can <strong>collaboratively gather notes</strong> using self-hosted or public instances of tools like <a class="reference external" href="https://hedgedoc.org/">HedgeDoc</a> and <a class="reference external" href="https://etherpad.org">Etherpad</a>
+or use online options like <a class="reference external" href="https://hackmd.io/">HackMD</a>, <a class="reference external" href="https://docs.google.com">Google Docs</a> or the Microsoft online tools for easy and efficient collaboration.
+These tools are convenient for brainstorming or getting a quick place to share ideas also with external collaborators.</p>
+<p>At Aalto we also have <a class="reference external" href="https://aaltofi.sharepoint.com/">Sharepoint</a>, which allows collaborative editing of MS Office documents, if this is your preferred format.
+Aalto also provides an <a class="reference external" href="https://www.overleaf.com">Overleaf</a> (LaTeX) subscription. Overleaf is a collaborative latex editor and Aalto provides several templates on the platform (e.g. Thesis templates, base Article templates etc).</p>
+<p>The huge advantages:</p>
+<ul class="simple">
+<li><p>You can work in parallel without duplicating work (if using a collaborative editor)</p></li>
+<li><p>You have time stamps of when ideas have been put forward (when there is a contention of originality)</p></li>
+</ul>
+</section>
+<section id="executable-manuscripts">
+<h3>Executable manuscripts<a class="headerlink" href="#executable-manuscripts" title="Link to this heading"></a></h3>
+<p>You may also want to consider writing an executable manuscript using tools like <a class="reference external" href="https://jupyter.org">Jupyter Notebooks</a> hosted on <a class="reference external" href="https://mybinder.org">Binder</a>, <a class="reference external" href="https://quarto.org/">Quarto</a>, <a class="reference external" href="https://www.authorea.com">Authorea</a> or <a class="reference external" href="https://observablehq.com/">Observable</a>, to name a few.</p>
+<p>One of the first steps to make your work reproducible is to organize your projects well.
+Let’s go over some of the basic things which people have found to work (and not to work).</p>
+</section>
+</section>
+<section id="organizing-projects">
+<h2>Organizing projects<a class="headerlink" href="#organizing-projects" title="Link to this heading"></a></h2>
+<section id="what-to-do-when-you-start">
+<h3>What to do when you start<a class="headerlink" href="#what-to-do-when-you-start" title="Link to this heading"></a></h3>
+<section id="before-you-start">
+<h4>Before you start<a class="headerlink" href="#before-you-start" title="Link to this heading"></a></h4>
+<p>Here are some things that should be at least considered before starting any project at Aalto. It’s important to not get scared by
+the amount of forms that you might encounter. There are people who are willing to help you like the <a class="reference external" href="https://www.aalto.fi/en/services/data-agents">Data Agents</a> and <a class="reference external" href="https://www.aalto.fi/en/services/research-software-engineers">Research Software Engineers</a></p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/before_starting.svg"><img alt="Flow chart, Of what to do prior to starting the project. Points to ethics approval and G-Process." src="../_images/before_starting.svg" style="width: 100%;" />
+</a>
+</figure>
+<p><strong>Relevant resources</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.aalto.fi/en/services/research-ethics-review-research-ethics-committee">Research Ethics Committee</a></p></li>
+<li><p><a class="reference external" href="https://www.aalto.fi/en/cyber-security/information-security-in-projects-and-small-scale-development-detailed-guidance">G process for small scale development</a></p></li>
+<li><p><a class="reference external" href="https://www.aalto.fi/en/services/data-management-plan-dmp">Data Management Plan</a></p></li>
+</ul>
+</section>
+<section id="when-you-actually-start">
+<h4>When you actually start<a class="headerlink" href="#when-you-actually-start" title="Link to this heading"></a></h4>
+<p>The following chart gives an overview of what data storage places you should set up / request when you start a new project, it can also help
+as a reference when setting up a Data management plan.</p>
+<figure class="align-default">
+<a class="reference internal image-reference" href="../_images/data_flow_chart.svg"><img alt="Flow chart, showing that teamwork is strictly needed, a version.aalto.fi repository needed, when code is involved and a triton data folder if hpc is required" src="../_images/data_flow_chart.svg" style="width: 100%;" />
+</a>
+</figure>
+<p><strong>Relevant resources</strong></p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.aalto.fi/en/services/data-storage-file-services">Data storage overview</a></p></li>
+<li><p><a class="reference external" href="https://www.aalto.fi/en/services/file-storage-space-for-research-and-groups-teamwork-network-drive">Teamwork Description</a></p></li>
+<li><p><a class="reference external" href="https://version.aalto.fi">Aalto Gitlab</a></p></li>
+<li><p><a class="reference external" href="https://scicomp.aalto.fi/data/requesting/">Triton Project Folder request</a></p></li>
+<li><p><a class="reference external" href="https://www.aalto.fi/en/services/secure-data-storage-secwork">SecData</a></p></li>
+</ul>
+<p>It’s important to note, that files in personal folders of students might be difficult to recover if the student leaves. Therefore always have project folders that are
+owned by the principal investigator and have your staff/students use these folders for storing project data or code.</p>
+</section>
+</section>
+<section id="directory-structure-for-projects">
+<h3>Directory structure for projects<a class="headerlink" href="#directory-structure-for-projects" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p>Project files in a <strong>single directory</strong>, this is your <a class="reference external" href="https://www.aalto.fi/en/services/file-storage-space-for-research-and-groups-teamwork-network-drive">teamwork folder</a>.</p></li>
+<li><p><strong>Different projects</strong> should have <strong>separate directories</strong>, different <a class="reference external" href="https://www.aalto.fi/en/services/file-storage-space-for-research-and-groups-teamwork-network-drive">teamwork folders</a>, different gitlab repositories</p></li>
+<li><p>Use <strong>consistent and informative directory structure</strong></p>
+<ul>
+<li><p>Avoid spaces in directory and file names – use <code class="docutils literal notranslate"><span class="pre">-</span></code>, <code class="docutils literal notranslate"><span class="pre">_</span></code> or CamelCase instead (nicer for computers to handle)</p></li>
+</ul>
+</li>
+<li><p>If you need to separate public/private data in gitlab:</p>
+<ul>
+<li><p>For secrets (e.g. API keys, access tokens or similar information):</p>
+<ul>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> to exclude the private information from being tracked</p></li>
+</ul>
+</li>
+<li><p>For code you don’t want to have public yet:</p>
+<ul>
+<li><p>create a separate public repository, which only contains the code that is publicly available.</p></li>
+<li><p>Do NOT create a fork for this but a separate repository. Note, that this public repository is your “ground truth”
+for anyone else and should reflect the version in use for publications</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Add a <strong>README file</strong> to describe the project and instructions on reproducing the results</p></li>
+<li><p>If you want to use the <strong>same code in multiple projects</strong>, host it on GitHub (or similar) and clone it into each of your project directories</p></li>
+</ul>
+<p>A project directory can look something like this:</p>
+<div class="highlight-shell notranslate"><div class="highlight"><pre><span></span>project_name/
+├──<span class="w"> </span>README.md<span class="w">             </span><span class="c1"># overview of the project</span>
+├──<span class="w"> </span>data/<span class="w">                 </span><span class="c1"># data files used in the project</span>
+│<span class="w">   </span>├──<span class="w"> </span>README.md<span class="w">         </span><span class="c1"># describes where data came from</span>
+│<span class="w">   </span>└──<span class="w"> </span>sub-directory/<span class="w">       </span><span class="c1"># may contain subdirectories</span>
+├──<span class="w"> </span>processed_data/<span class="w">       </span><span class="c1"># intermediate files from the analysis</span>
+├──<span class="w"> </span>manuscript/<span class="w">           </span><span class="c1"># manuscript describing the results</span>
+├──<span class="w"> </span>results/<span class="w">              </span><span class="c1"># results of the analysis (data, tables, figures)</span>
+├──<span class="w"> </span>src/<span class="w">                  </span><span class="c1"># contains all code in the project (tracked with gitlab)</span>
+│<span class="w">   </span>├──<span class="w"> </span>LICENSE<span class="w">           </span><span class="c1"># license for your code</span>
+│<span class="w">   </span>├──<span class="w"> </span>requirements.txt<span class="w">  </span><span class="c1"># software requirements and dependencies</span>
+│<span class="w">   </span>└──<span class="w"> </span>...
+└──<span class="w"> </span>doc/<span class="w">                  </span><span class="c1"># documentation for your project</span>
+<span class="w">    </span>├──<span class="w"> </span>index.rst
+<span class="w">    </span>└──<span class="w"> </span>...
+</pre></div>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="tracking-source-code-data-and-results">
+<h2>Tracking source code, data, and results<a class="headerlink" href="#tracking-source-code-data-and-results" title="Link to this heading"></a></h2>
+<ul>
+<li><p>All code is version controlled and goes in the <code class="docutils literal notranslate"><span class="pre">src/</span></code> or <code class="docutils literal notranslate"><span class="pre">source/</span></code> directory</p></li>
+<li><p>Include appropriate LICENSE file and information on software requirements</p></li>
+<li><p>You can also version control data files or input files under <code class="docutils literal notranslate"><span class="pre">data/</span></code></p>
+<ul class="simple">
+<li><p>If data files are too large (or sensitive) to track, untrack them using <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code></p></li>
+</ul>
+</li>
+<li><p>Intermediate files from the analysis are kept in <code class="docutils literal notranslate"><span class="pre">processed_data/</span></code> and should be in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code></p></li>
+<li><p>Consider using Git tags to mark specific versions of results (version
+submitted to a journal, dissertation version, poster version, etc.):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>git<span class="w"> </span>tag<span class="w"> </span>-a<span class="w"> </span>thesis-submitted<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;this is the submitted version of my thesis&quot;</span>
+</pre></div>
+</div>
+</li>
+</ul>
+<p>Check the <a class="reference external" href="https://coderefinery.github.io/git-intro/">Git-intro lesson</a> for a reminder.</p>
+</section>
+<section id="some-tools-and-templates">
+<h2>Some tools and templates<a class="headerlink" href="#some-tools-and-templates" title="Link to this heading"></a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://devtools.r-lib.org/">R devtools</a></p></li>
+<li><p><a class="reference external" href="https://github.com/Materials-Data-Science-and-Informatics/fair-python-cookiecutter">Python cookiecutter template</a></p></li>
+<li><p><a class="reference external" href="https://github.com/the-turing-way/reproducible-project-template">Reproducible research template</a> by the Turing Way</p></li>
+</ul>
+<p>More tools and templates in <a class="reference external" href="https://heidiseibold.ck.page/posts/setting-up-a-fair-and-reproducible-project">Heidi Seibolds blog</a>.</p>
+<section id="resources-on-research-compendia">
+<h3>Resources on research compendia<a class="headerlink" href="#resources-on-research-compendia" title="Link to this heading"></a></h3>
+<ul class="simple">
+<li><p><a class="reference external" href="https://book.the-turing-way.org/reproducible-research/compendia">About research compendia at the Turing Way</a></p></li>
+<li><p><a class="reference external" href="http://inundata.org/talks/rstd19/#/">“Research compendia”</a>: a set of good practices for reproducible data analysis in R, but much is transferable to other languages.</p></li>
+<li><p><a class="reference external" href="https://github.com/benmarwick/rrtools">rrtools</a>: instructions, templates, and functions for writing a reproducible article or report with R.</p></li>
+<li><p>…</p></li>
+</ul>
+<div class="admonition-keypoints keypoints admonition" id="keypoints-0">
+<p class="admonition-title">Keypoints</p>
+<ul class="simple">
+<li><p>An organized project directory structure helps with reproducibility.</p></li>
+<li><p>Also think about version control for writing your academic manuscripts.</p></li>
+</ul>
+</div>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../motivation/" class="btn btn-neutral float-left" title="Motivation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../workflow-management/" class="btn btn-neutral float-right" title="Recording computational steps" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright CodeRefinery contributors &amp; AaltoRSE.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
