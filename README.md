@@ -2,14 +2,14 @@
 
 - Timing:
  - 2:00 to 3:30, 90 minutes
- - Breaks? Suggest 10 minute break or exercise around the middle.
 
 - Introductions, 5 minutes
 - Motivation: 10 minutes
   - Why the lesson, talk about learning outcomes
   - Reproducability
-- Organizing Projects: 15 minutes
+- Organizing Projects: 20 minutes
   - reproducible publications: 5 minutes
+  - Aalto specific procedures: 5 minutes
   - Project structure: 10 minutes
 - Recording Computational steps: 10 minutes
   - theory: 5 minutes
